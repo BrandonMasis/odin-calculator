@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(39, 37, 37);
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator{
+    background-image: url(./images/figma.png);
+    background-size: 60%;
+    width: 50em;
+    height: 60em;
+    background-repeat: no-repeat;
+    margin-left: 30em;
+    margin-top: 10em;
+    display: flex;
+    
+}
+
+.container{
+    /* border: solid blue 5px; */
+    width: 26.5em;
+    height: 26.5em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+    padding: 1em 1em;
+}
+
+
+.operation{
+    color: #D8D8D8;
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: flex-start;
+    line-height: 1;
+    
+}
+.result{
+    color: #A6BCDE;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-left: 13em;
+    
+}
+
+.key-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.row:nth-child(4){
+    width: 50%;
+    align-self: flex-end;
+}
+
+#equal{
+    background: linear-gradient(249.48deg, #23FF6E -21.74%, #4C8860 122.15%);
+    border-color: #668b72;
+    
+}
+.key{
+    background: radial-gradient(49.45% 86.01% at 49.45% 49.28%, #DCDAD4 0%, #C4C2BB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    width: 4em;
+    height: 4em;
+    flex-grow: 1;
+    border-style: none;
+    border-radius: 5.5px;
+    border-left: solid 4px #BAB7AD;
+    border-right: solid 4px #BAB7AD;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.unu{
+width:100px;
+height: 100px;
+
+}

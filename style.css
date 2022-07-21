@@ -5,7 +5,10 @@
 }
 
 body{
-    background-color: rgb(39, 37, 37);
+   
+    
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
     overflow: hidden;
 }
 
@@ -14,15 +17,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 120em;
     
 }
 .calculator{
     background-image: url(./images/figma.png);
-    background-size: 60%;
+    background-size: 30em;
     width: 50em;
     height: 60em;
     background-repeat: no-repeat;
-    margin-left: 30em;
+    margin-left: 25em;
     margin-top: 10em;
     display: flex;
     
@@ -40,11 +44,11 @@ body{
 }
 .display{
     display: flex;
+    height: 6em;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1.4em;
-    padding: 1em 1em;
+    padding: 1em 0em 0em 1em;
 }
 
 
@@ -58,11 +62,12 @@ body{
     
 }
 .result{
-    color: #A6BCDE;
+    color: #74abfd;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 1.3em;
     margin-left: 13em;
+    
     
 }
 
@@ -78,6 +83,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 10px;
+    align-items: center;
 
 }
 
@@ -89,13 +95,36 @@ body{
 #equal{
     background: linear-gradient(249.48deg, #23FF6E -21.74%, #4C8860 122.15%);
     border-color: #668b72;
-    
+    width: 4em;
+    height: 4em;
+    flex-basis: 100%;
+    flex-grow: 0;
+    border-style: none;
+    border-radius: 5.5px;
+    border-left: solid 4px #498836;
+    border-right: solid 4px #498836;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.key{
+#equal:hover{
+    background: linear-gradient(249.48deg, #1dd85c -21.74%, #386347 122.15%);
+    border-left: solid 4px #417730;
+    border-right: solid 4px #3b6e2c;
+}
+#equal:active{
+    width: 3.8em;
+    height: 3.8em;
+    margin: 0px 1px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.key, .symbol{
     background: radial-gradient(49.45% 86.01% at 49.45% 49.28%, #DCDAD4 0%, #C4C2BB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     width: 4em;
     height: 4em;
-    flex-grow: 1;
+    flex-basis: 100%;
+    flex-grow: 0;
     border-style: none;
     border-radius: 5.5px;
     border-left: solid 4px #BAB7AD;
@@ -105,9 +134,52 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.key:hover,.symbol:hover{
+    background: radial-gradient(49.45% 86.01% at 49.45% 49.28%, #cccac5 0%, #adaca8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-left: solid 4px #a5a49f;
+    border-right: solid 4px #a5a49f;
+}
+.key:active,.symbol:active{
+    background: radial-gradient(49.45% 86.01% at 49.45% 49.28%, #cccac5 0%, #adaca8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-left: solid 3px #a5a49f;
+    border-right: solid 3px #a5a49f;
+    width: 3.8em;
+    height: 3.8em;
+    margin: 0px 1px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
 
 .unu{
 width:100px;
 height: 100px;
 
 }
+
+#operator{
+    color: #7ff174;
+}
+
+.typing{
+    color: #23FF6E;
+    display: inline;
+    float: right;
+    
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes pulse{
+    0% {color: #74abfd;}
+    70% {color: #74abfd;}
+    100%   {color: #11142A;}
+    
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }

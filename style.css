@@ -93,7 +93,7 @@ body{
 }
 
 #equal{
-    background: linear-gradient(249.48deg, #23FF6E -21.74%, #4C8860 122.15%);
+    background: linear-gradient(249.48deg, #23f86a -21.74%, #4C8860 122.15%);
     border-color: #668b72;
     width: 4em;
     height: 4em;
@@ -102,7 +102,7 @@ body{
     border-style: none;
     border-radius: 5.5px;
     border-left: solid 4px #498836;
-    border-right: solid 4px #498836;
+    border-right: solid 4px #427c31;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
